@@ -28,17 +28,6 @@ public:
         balance = amount;
     }
 
-    void deposit(double amount) {
-        balance += amount;
-    }
-
-    bool withdraw(double amount) {
-        if (amount > balance) {
-            return false;
-        }
-        balance -= amount;
-        return true;
-    }
 };
 
 int main(){
